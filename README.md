@@ -57,15 +57,21 @@ Enter a student's name when prompted.
 🧾 Sample Output
 
 ========================================
-          REPORT CARD: AARAV SHARMA
+          REPORT CARD: SAISHA KAUSHIK
 ========================================
-  Total     : 475/500
-  Percentage: 95.00%
-  Class Rank: 1 out of 50
+  English   : 43/100
+  Maths     : 37/100
+  Physics   : 41/100
+  Chemistry : 35/100
+  Biology   : 39/100
+----------------------------------------
+  Total     : 195/500
+  Percentage: 39.00%
+  Class Rank: 45 out of 50
+----------------------------------------
   Result    : PASSED THE EXAM
-  Grade     : Grade A+
+  Grade     : Grade D
 ========================================
-
 ---
 
 🧠 What I Learned
@@ -107,14 +113,10 @@ This project helped me practice:
 
 This is one of my early projects as a first-year engineering student. I built it to practice combining Python fundamentals into a useful application.
 
-My learning path is:
-
-Python → Data & Automation → AI/ML → Cybersecurity
-
 ---
 
 👨‍💻 About Me
 
-I'm exploring Python, AI/ML, and Cybersecurity while improving my programming fundamentals through practical projects.
+I'm exploring Python, AI/ML while improving my programming fundamentals through practical projects.
 
 ⭐ Feel free to explore the repository.
