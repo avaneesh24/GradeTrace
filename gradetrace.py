@@ -7,14 +7,15 @@ students = []
 # Read student records and calculate total marks
 with open("student_marks.csv", "r", newline="", encoding="utf-8") as file:
     reader = csv.DictReader(file)
+    print(reader.fieldnames)
 
     for row in reader:
         row["Total"] = (
-            int(row["English"])
-            + int(row["Maths"])
-            + int(row["Physics"])
-            + int(row["Chemistry"])
-            + int(row["Biology"])
+            int(row['Eng'])
+            + int(row['Maths'])
+            + int(row['Phys'])
+            + int(row['Chem'])
+            + int(row['Bio'])
         )
 
         students.append(row)
@@ -38,11 +39,11 @@ for student in students_sorted:
         found = True
 
         name = student["Student Name"]
-        english = int(student["English"])
+        english = int(student["Eng"])
         maths = int(student["Maths"])
-        physics = int(student["Physics"])
-        chemistry = int(student["Chemistry"])
-        biology = int(student["Biology"])
+        physics = int(student["Phys"])
+        chemistry = int(student["Chem"])
+        biology = int(student["Bio"])
 
         total = student["Total"]
         percentage = (total / 500) * 100
@@ -51,11 +52,11 @@ for student in students_sorted:
         failed_subjects = [
             subject
             for subject, marks in [
-                ("English", english),
-                ("Maths", maths),
-                ("Physics", physics),
-                ("Chemistry", chemistry),
-                ("Biology", biology),
+                ("English",english),
+                ("Maths",maths),
+                ("Physics",physics),
+                ("Chemistry",chemistry),
+                ("Biology",biology),
             ]
             if marks < 33
         ]
